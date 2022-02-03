@@ -11,7 +11,7 @@ Create env and install dependencies
 # Create env
 cd fastapi-postgres-base
 python3 -m venv venv
-# Active env
+# Activate env
 source venv/bin/activate
 # Install dependencies
 pip install -r requirements.txt
@@ -20,6 +20,12 @@ Install & run Postgresql with dockercompose
 
 ```bash
 docker-compose up -d
+```
+
+Copy .env_example file to .env
+
+```bash
+cp .env_example .env
 ```
 
 Migrate all models to database
